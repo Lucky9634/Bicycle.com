@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#loader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    z-index: 99;
+}
+
+#loader h3 {
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+#page1 {
+    height: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#page1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+#page1 .tags {
+    position: absolute;
+    bottom: -2rem;
+    left: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#page1 .tags h2 {
+    font-size: 17rem;
+    line-height: 17rem;
+}
+
+#page1 .tags h2:nth-child(1) span {
+    color: yellow;
+}
+
+#page1 .tags h2:nth-child(2) span {
+    color: red;
+}
+
+.logo img {
+    width: 4rem;
+    height: 4rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #d9d8dbad;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #d9d8db;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    font-size: 1.4rem;
+}
+
+nav ul a:hover {
+    transition: all 0.3s;
+    color: yellow;
+}
+
+
+
+
+#page2 {
+    height: 100%;
+    height: 100vh;
+    background-color: rgb(209, 238, 249);
+}
+
+#page2 .videoContainer {
+    padding: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#page2 .videoContainer .firstVedio {
+    background-color: red;
+}
+
+#page2 .videoContainer .secondVedio {
+    background-color: green;
+}
+
+#page2 .videoContainer .thirdVedio {
+    background-color: blue;
+}
+
+.setting {
+    width: 30%;
+    height: 30vh;
+    position: relative;
+    cursor: pointer;
+}
+
+.setting img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.setting img:hover {
+    transition: 0.3s ease-in;
+    opacity: 0;
+}
+
+.setting video {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.setting .hearding {
+    position: absolute;
+    top: 164%;
+    left: 50%;
+    transform: translate(-48%, 50%);
+}
+
+.setting h2 {
+    font-size: 8rem;
+    letter-spacing: 0.1em;
+}
+
+.setting:hover h2 {
+    transition: 0.3s ease-in;
+    opacity: 0;
+}
+
+#page3 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(184, 228, 245);
+    overflow: hidden;
+}
+
+#page3Content {
+    padding: 0rem 2rem;
+}
+
+#page3Content .buttoms {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 2rem;
+    padding: 2rem 1rem;
+}
+
+#page3Content .buttoms a {
+    padding: 4px 1rem;
+    letter-spacing: 0.1em;
+    font-size: 2rem;
+    position: relative;
+}
+
+#page3Content .buttoms a:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border: 2px solid red;
+    opacity: 0;
+}
+
+#page3Content .buttoms a:nth-child(1):hover::after {
+    transition: 0.5s;
+    width: 90%;
+    opacity: 1;
+}
+
+#page3Content .buttoms a:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 8%;
+    width: 0;
+    border: 2px solid green;
+    opacity: 0;
+}
+
+#page3Content .buttoms a:nth-child(2):hover::after {
+    transition: 0.5s;
+    width: 90%;
+    opacity: 1;
+}
+
+#page3Content .buttoms a:nth-child(1) {
+    color: green;
+}
+
+#page3Content .buttoms a:nth-child(2) {
+    color: red;
+}
+
+.page3Heading {
+    width: 91%;
+    margin: 1px auto;
+    display: flex;
+}
+
+.page3Heading h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.Btn-Buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Btn-Buy a {
+    font-size: 2rem;
+}
+
+.Btn-Buy::after {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    right: 40%;
+    width: 0%;
+    border: 2px solid green;
+    opacity: 0;
+}
+
+.Btn-Buy:hover::after {
+    transition: 0.5s ease-in;
+    width: 20%;
+    opacity: 1;
+}
+
+.Btn-Buy a span:nth-child(2) {
+    display: none;
+}
+
+.Btn-Buy a:hover span:nth-child(2) {
+    transition: 0.5s ease-in;
+    display: contents;
+}
+
+.Btn-Buy a:hover span:nth-child(1) {
+    transition: 0.5s ease-in;
+    display: none;
+}
+
+
+#page4 {
+    width: 100%;
+    height: 300vh;
+    position: relative;
+}
+
+#page4 .page4Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page4 .page4Container h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+    margin: 1rem 0;
+    margin-top: 2rem;
+    color: white;
+}
+
+
+#page4 .cards {
+    width: 80%;
+    margin: 0rem auto;
+    padding: 1rem ;
+    position: sticky;
+}
+.card{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    top: 1rem;
+    height: 100vh;
+}
+
+.newItemsProperty {
+    width: 35%;
+    height: 35rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.newItemsProperty img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: rgb(201, 239, 239);
+    border: 1px solid black;
+
+}
+
+.newItemsProperty h2{
+    position: absolute;
+    width: 100%;
+    font-size: 3rem;
+    bottom: 10%;
+    color: aqua;
+    left: 50%;
+    transform: translate(-22%, 50%);
+    -webkit-text-stroke-color: rgb(247, 2, 2);
+    -webkit-text-stroke-width: 1px;
+    font-weight: 500;
+}
