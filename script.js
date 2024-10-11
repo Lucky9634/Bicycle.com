@@ -202,7 +202,6 @@ document.querySelectorAll(".card").forEach((card)=>{
             trigger: card,
             start: "top 15%",
             end: "bottom 10%",
-            markers: true,
             scrub: 2,
         }
     })
