@@ -179,7 +179,7 @@ gsap.from(".Btn-Buy a", {
 gsap.from(".page4Container h2 span", {
     opacity: 0,
     x: -300,
-    duration: 2,
+    duration: 5,
     delay: 0.3,
     stagger: 0.1,
     scrollTrigger: {

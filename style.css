@@ -272,8 +272,11 @@ nav ul a:hover {
 }
 
 .page3Heading h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 300;
+}
+.page3Heading h1 span{
+    display: inline-block;
 }
 
 .Btn-Buy {
