@@ -8,6 +8,7 @@ tlOne.from("#loader h3", {
     delay: 0.5,
     stagger: 0.1,
 })
+
 tlOne.to("#loader h3", {
     x: -10,
     duration: 0.5,
@@ -190,11 +191,10 @@ gsap.from(".page4Container h2 span", {
 })
 
 
-document.querySelectorAll(".card").forEach((card)=>{
+document.querySelectorAll(".card").forEach((card) => {
     gsap.to(card, {
         opacity: 0,
         scale: 0.7,
-        // x: -300,
         duration: 1,
         delay: 0.3,
         stagger: 0.1,
@@ -208,7 +208,6 @@ document.querySelectorAll(".card").forEach((card)=>{
     gsap.to(card, {
         opacity: 0,
         scale: 0.7,
-        // x: 300,
         duration: 1,
         delay: 0.3,
         stagger: 0.1,
@@ -220,6 +219,63 @@ document.querySelectorAll(".card").forEach((card)=>{
         }
     })
 })
+
+gsap.from(".link-heading h1", {
+    opacity: 0,
+    y: -200,
+    duration: 0.5,
+    stagger: 0.1,
+    scrollTrigger: {
+        trigger: ".link-heading h1",
+        start: "top 80%",
+        end: "bottom 50%",
+        scrub: true,
+    }
+})
+
+gsap.from(".anker-link a", {
+    opacity: 0,
+    x: 300,
+    stagger: 0.1,
+    scrollTrigger: {
+        trigger: ".anker-link a",
+        start: "top 80%",
+        end: "bottom 50%",
+        duration: 2,
+        scrub:true,
+    }
+})
+
+
+let cursor = document.querySelector("#page5");
+
+cursor.addEventListener("mouseenter", function (event) {
+    gsap.to("#cursor", {
+        opacity: 1,
+    })
+})
+
+cursor.addEventListener("mousemove", function (event) {
+    gsap.to("#cursor", {
+        x: event.x,
+        y: event.y,
+        duration: 1,
+        ease: "back.out"
+    })
+})
+
+cursor.addEventListener("mouseleave", function (event) {
+    gsap.to("#cursor", {
+        opacity: 0,
+    })
+})
+
+
+
+
+
+
+
 
 
 
